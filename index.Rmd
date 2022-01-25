@@ -1,6 +1,6 @@
 ---
 title: "Discharge Data Example"
-author: "Matthew Ross"
+author: "Meggi Varnai"
 date: "1/24/2022"
 output:
   html_document:
