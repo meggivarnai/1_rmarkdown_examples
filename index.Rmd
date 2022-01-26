@@ -1,11 +1,12 @@
 ---
 title: "Discharge Data Example"
 author: "Meggi Varnai"
-date: "1/24/2022"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output:
   html_document:
     toc: true
     toc_float: true
+    toc_depth: 3
 ---
 
 ```{r setup, include=FALSE}
@@ -71,6 +72,7 @@ ggplot(q, aes(x = Date, y = q)) +
 
 
 ```{r}
+#format data for dygraph to understand. can find in 'help' 
 
 q_xts <- xts(q$q, order.by = q$Date)
 
@@ -81,7 +83,7 @@ dygraph(q_xts) %>%
 
 
 
-# Assignment. 
+# Assignment
 
 
 This assignment will be primarily about demonstrating some expertice in using
@@ -100,9 +102,7 @@ headers instead of two (by editing the content at the beginning of the document)
 dygraph [guide](https://rstudio.github.io/dygraphs/)
 
 5) Writing a paragraph on the Poudre river with at least three hyperlinks,
-**two bolded sections**, and one *italicized phrase*. The content of this paragraph
-is not vital, but try to at least make it true and interesting, and, of course,
-don't plagiarize. 
+**two bolded sections**, and one *italicized phrase*. The content of this paragraph is not vital, but try to at least make it true and interesting, and, of course, don't plagiarize. 
 
 6) Knit that document, and then git commit and push to your personal GitHub.
 
@@ -119,8 +119,14 @@ todays date, not just a static date you enter.
 
 ## DyGraph example. 
 
+```{r}
+dygraph(q_xts) %>%
+  dyAxis("y", label = "Discharge (cfs)") %>%
+  dyOptions(drawPoints = TRUE, pointSize = 2)
 
-## Poudre Paragraph
+```
 
+# Poudre Paragraph
+[Poudre River] (link)
 
 
