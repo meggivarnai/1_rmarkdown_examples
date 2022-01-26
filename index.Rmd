@@ -16,7 +16,18 @@ library(tidyverse)
 library(dataRetrieval)
 library(dygraphs)
 library(xts)
+library(revealjs)
 ```
+
+
+
+
+# Cache la Poudre River
+
+![](https://waterdata.usgs.gov/nwisweb/local/state/co/text/pics/06752260big.jpg)
+
+**The [Poudre River](https://coloradoencyclopedia.org/article/cache-la-poudre-river) begins in Rocky Mountain National Park and flows east from the continental divide into northern Colorado where it junctions with the South Platte River.** Today we can explore the river by taking Highway 14 which follows the river and offers views of the clifs and rock formations covered in sagebrush, aspens, and other native vegetation. *But why is it called the Cache la Poudre?*
+The [name we know today](https://history.fcgov.com/explore/poudre-river) originated in the late 1800s when french trappers found themselves stranded in the canyon and and 'cached' some supplies, including gunpowder, till the spring. **"Cache la Poudre" is french for "where the powder is hidden"**. Read the [full article](https://www.raftmw.com/whats-in-a-name/) of the many names the river was called over the centuries. 
 
 
 # Methods
@@ -30,12 +41,6 @@ The Poudre River at Lincoln Bridge is:
   - Near an open space area and the Poudre River Trail
   
   - **Downstream of many agricultral diversions**
-
-
-## SiteDescription
-
-![](https://waterdata.usgs.gov/nwisweb/local/state/co/text/pics/06752260big.jpg)
-
 
 ## Data Acquisition and Plotting tests
 
@@ -126,7 +131,5 @@ dygraph(q_xts) %>%
 
 ```
 
-# Poudre Paragraph
-[Poudre River] (link)
 
 
