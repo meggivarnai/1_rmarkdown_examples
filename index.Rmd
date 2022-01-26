@@ -19,7 +19,8 @@ library(xts)
 library(revealjs)
 ```
 
-
+    
+[Presentation View](https://meggivarnai.github.io/1_rmarkdown_examples/)
 
 
 # Cache la Poudre River
