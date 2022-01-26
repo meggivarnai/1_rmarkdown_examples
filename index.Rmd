@@ -16,7 +16,6 @@ library(tidyverse)
 library(dataRetrieval)
 library(dygraphs)
 library(xts)
-library(revealjs)
 ```
 
     
